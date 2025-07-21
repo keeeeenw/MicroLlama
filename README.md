@@ -132,3 +132,21 @@ This repository is built upon [TinyLlama](https://github.com/jzhang38/TinyLlama)
   year      ={2023}
 }
 ```
+
+## Citation
+If you use MicroLlama in your research or work, please cite the project using the following reference:
+APA:
+```
+Wang, Z. K. (2024). MicroLlama: A 300M-parameter language model trained from scratch. GitHub & Hugging Face. https://github.com/keeeeenw/MicroLlama, https://huggingface.co/keeeeenw/MicroLlama
+```
+BibTeX:
+```
+@misc{wang2024microllama,
+  author       = {Zixiao Ken Wang},
+  title        = {MicroLlama: A 300M-parameter language model trained from scratch},
+  year         = {2024},
+  howpublished = {\url{https://github.com/keeeeenw/MicroLlama}, \url{https://huggingface.co/keeeeenw/MicroLlama}},
+  note         = {GitHub and Hugging Face repositories}
+}
+```
+🙏 Please cite this work if you find it useful.
