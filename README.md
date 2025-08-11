@@ -27,7 +27,16 @@ I modified [TinyLlama](https://github.com/jzhang38/TinyLlama) to support the fol
 4. Various helper scripts and Python code such as python code for uploading the pretrained checkpoint to the huggingface hub.
 5. Bug fixes.
 
-#### Evaluation results
+## News and Updates
+
+**08/10/2025** - Released [MicroLaVa](https://github.com/keeeeenw/MicroLlava), a lightweight Visual Q&A model based on [TinyLLaVA_Factory](https://github.com/TinyLLaVA/TinyLLaVA_Factory). The [MicroLaVa](https://github.com/keeeeenw/MicroLlava) model contains only 700M parameters in total and can be pre-trained and fine-tuned on a single Nvidia RTX 4090. Built on MicroLlama, it already produces meaningful results with further improvements planned.
+
+**11/10/2024** - Published [MicroLlama-text-embedding](https://huggingface.co/keeeeenw/MicroLlama-text-embedding/), a compact text embedding model for sentence similarity tasks. Based on MicroLlama architecture, this model is in active development and requires further optimization.
+
+**06/04/2024** - MicroLlama became officially supported in [LitGPT](https://github.com/Lightning-AI/litgpt). Thanks to the Lightning AI team for accepting my [merge request](https://github.com/Lightning-AI/litgpt/pull/1457) and providing Lightning AI Studio credits.
+
+
+## Evaluation results
 
 I performed the experiment using the standard [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) setup. Following the same setup as [TinyLlama](https://github.com/jzhang38/TinyLlama), I used **acc_norm** for all datasets except for **winogrande** and **boolq** which used **acc** as the metrics.
 
@@ -132,6 +141,8 @@ This repository is built upon [TinyLlama](https://github.com/jzhang38/TinyLlama)
   year      ={2023}
 }
 ```
+
+Special thanks to Xinyang, creator of the outstanding [OpenLLaMA](https://github.com/openlm-research/open_llama) project, whose work inspired me to embark on this project. I’m grateful for the guidance in foundational concepts such as establishing scaling laws before training a model.
 
 ## Citation
 If you use MicroLlama in your research or work, please cite the project using the following reference:
